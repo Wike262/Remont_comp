@@ -254,7 +254,8 @@ body
 							padding: 10px
 							width: 70%
 							margin: 10px
-							border: 2px solid #dfdfdf
+							border: none
+							border-bottom: 2px solid #dfdfdf
 							&:focus
 								border-color: $PRIMARY_COLOR
 						button
@@ -540,3 +541,106 @@ body
 							font-weight: bold
 							font-size: 34px
 							text-transform: uppercase
+	.services
+		.container
+			.row
+				.title
+					text-align: center
+					margin: 40px 0
+					margin-top: 60px
+					h2
+						font-size: 36px
+						font-weight: bold
+				.description
+					color: #646e7a
+					text-align: center
+					font-size: 18px
+				.advanced
+					padding: 10px
+					.item
+						height: 100%
+						@extend .transition
+						background: #f2f2f2
+						border: 1px solid #dfdfdf
+						padding: 10px
+						.description
+							text-align: left
+							padding: 20px
+							height: 100%
+							background: #ffffff
+							position: relative
+							i
+								color: #cccccc
+								font-size: 70px !important
+							h3
+								color: #24262a
+								font-weight: bold
+								font-size: 16px
+								text-transform: uppercase
+								margin: 20px 0
+							p
+								color: #333333
+								font-size: 14px
+							a
+								position: absolute
+								cursor: pointer
+								bottom: 0
+								right: 0
+								background-color: $PRIMARY_COLOR
+								border: none
+								display: flex
+								height: 35px
+								width: 35px
+								justify-content: center
+								align-items: center
+								i
+									font-size: 16px !important
+									color: #ffffff
+						&:hover
+							background: lighten($PRIMARY_COLOR,30%)
+							.description
+								i
+									color: $PRIMARY_COLOR
+								a
+									@extend .transition
+									background: #333333
+#comp_form,#phone_form,#nout_form,#plan_form
+		background: #ffffff
+		padding: 70px 0
+		.container
+			.row
+				ul
+					list-style-type: disc
+				.callback
+					display: flex
+					flex-wrap: wrap
+					align-items: flex-start
+					position: relative
+					@media screen and(max-width: $sm)
+						justify-content: center
+						margin-bottom: 100px
+					input,textarea
+						@extend .transition
+						height: 70px
+						padding: 10px
+						width: 100%
+						margin: 10px 0
+						border: none
+						border-bottom: 2px solid #dfdfdf
+						&:focus
+							border-color: $PRIMARY_COLOR
+					button
+						@extend .transition
+						background-color: $PRIMARY_COLOR
+						border: 2px solid $PRIMARY_COLOR
+						border-radius: 5px
+						color: #ffffff
+						font-weight: bold
+						text-transform: uppercase
+						height: 50px
+						width: 170px
+						cursor: pointer
+						margin-top: 30px
+						&:hover
+							background: #ffffff
+							color: $PRIMARY_COLOR

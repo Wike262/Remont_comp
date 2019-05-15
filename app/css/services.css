@@ -1,0 +1,8 @@
+.transition {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+
+.aft-bef {
+  content: '';
+  position: absolute; }

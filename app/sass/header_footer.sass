@@ -57,6 +57,7 @@ a
 			content: '\f105'
 body
 	overflow-x: hidden
+	min-width: 400px
 	header
 		.head_top
 			margin: 30px 0
@@ -161,6 +162,8 @@ body
 								a
 									display: block
 									padding: 15px 5px
+									@media screen and(max-width: $sm)
+										padding: 15px 2px
 									i
 										@extend .transition
 										color: $PRIMARY_COLOR
@@ -296,6 +299,8 @@ body
 									color: $PRIMARY_COLOR
 			.callback
 				.description
+					.email,.phone
+						display: flex
 					input
 						border: none
 						padding-left: 10px
@@ -311,6 +316,10 @@ body
 							color: #ffffff
 						&:hover
 							background-color: darken($PRIMARY_COLOR, 10%)
+					.error
+						i
+							&:nth-child(1)
+								display: none
 		.footer_lower
 			border-top: 1px solid #444;
 			background-color: #1a1a1a

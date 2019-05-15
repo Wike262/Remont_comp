@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/header_footer.css">
 	<link rel="stylesheet" href="css/main.css">
-
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -117,7 +117,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="about_us">
+	<div class="about_us" id="advanced">
 		<div class="container">
 			<div class="row">
 				<div class="title col-12">
@@ -127,7 +127,7 @@
 					<p>Что бы не случилось в вашим устройством. Мы сможем это починить. Выберите наиболее подходящее вам
 						из готовых решений что бы получить больше инофрмации по вашей проблеме.</p>
 				</div>
-				<div class="advanced col-lg-3 col-6">
+				<div class="advanced col-lg-3 col-md-6 col-12">
 					<div class="item">
 						<div class="description">
 							<i class="fa fa-desktop" aria-hidden="true"></i>
@@ -135,11 +135,12 @@
 							<p>Наша команда высоко квалифицированных специалистов готова позоботится об вашем
 								компьютере.
 							</p>
-							<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+							<a href="#comp_form" class="comp_popup"><i class="fa fa-arrow-right"
+									aria-hidden="true"></i></a>
 						</div>
 					</div>
 				</div>
-				<div class="advanced col-lg-3 col-6">
+				<div class="advanced col-lg-3 col-md-6 col-12">
 					<div class="item">
 						<div class="description">
 							<i class="fa fa-building-o" aria-hidden="true"></i>
@@ -147,21 +148,23 @@
 							<p>Мы можем чинить устройства со 100% пользовательской кастомизацией и предлагаем гарантию
 								1,5
 								месяца </p>
-							<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+							<a href="#phone_form" class="phone_popup"><i class="fa fa-arrow-right"
+									aria-hidden="true"></i></a>
 						</div>
 					</div>
 				</div>
-				<div class="advanced col-lg-3 col-6">
+				<div class="advanced col-lg-3 col-md-6 col-12">
 					<div class="item">
 						<div class="description">
 							<i class="fa fa-desktop" aria-hidden="true"></i>
 							<h3>Ремонт ноутбуков</h3>
 							<p>Мы можем починить любые типы ноутбуков надежно и в короткие сроки.</p>
-							<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+							<a href="#nout_form" class="nout_popup"><i class="fa fa-arrow-right"
+									aria-hidden="true"></i></a>
 						</div>
 					</div>
 				</div>
-				<div class="advanced col-lg-3 col-6">
+				<div class="advanced col-lg-3 col-md-6 col-12">
 					<div class="item">
 						<div class="description">
 							<i class="fa fa-building-o" aria-hidden="true"></i>
@@ -169,7 +172,8 @@
 							<p>Мы можем предоставить ремонт лучшего качества любому типу устройств и бесплатно
 								диагностировать
 								проблему.</p>
-							<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+							<a href="#plan_form" class="plan_popup"><i class="fa fa-arrow-right"
+									aria-hidden="true"></i></a>
 						</div>
 					</div>
 				</div>
@@ -188,12 +192,10 @@
 						<h2>Лет опыта в ремонте сломаных устройств</h2>
 					</div>
 					<div class="about">
-						<p>Restore is a U.S based computer repair service center. Basically we repair all major brands
-							of PCs, Laptops, Smartphone, Tablet and Gaming console devices issues. We provide the
-							services by well trained, skillful and friendly stuff. Our skill have been tested over the
-							years.</p>
-						<p>We’re not only here to fix your device but also make sure you are informed and comfortable
-							with the whole process. We’ll keep you updated and you feel comfortable with our services.
+						<p>Restore это центр починки электронной техники. В основном мы занимаемся ремонтом
+							компьютеров, ноутбуков, планшетов, различных накопителей и игровых консолей.</p>
+						<p>Мы не только ремонтируем ваши устройства, но мы так же стараемся держать вас в курсе что с
+							вашим устройством
 						</p>
 					</div>
 					<div class="baners">
@@ -256,11 +258,13 @@
 						<h2>Свяжитесь с нами</h2>
 						<p>Опишите свою проблему и мы вам перезвоним.</p>
 					</div>
-					<form action="send.php">
-						<input type="text" placeholder="Введите ваше имя">
-						<input type="text" placeholder="Введите ваш телефон">
-						<textarea name="message" id="message" placeholder="Опишите вашу проблему"></textarea>
-						<button type="submit">Отправить</button>
+					<form class="call-back" id="callback">
+						<input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+						<input type="text" name="phone" id="phone" placeholder="Введите ваш телефон" required>
+						<textarea name="message" name="comment" id="comment" placeholder="Опишите вашу проблему"
+							required></textarea>
+						<button type="submit" class="button" id="callback" for="callback">Отправить</button>
+						<div class="error_callback"></div>
 					</form>
 				</div>
 			</div>
@@ -416,6 +420,160 @@
 			</div>
 		</div>
 	</div>
+	<div id="comp_form" class="mfp-hide white-popup-block">
+		<div class="container">
+			<div class="row">
+				<div class="title col-12">
+					<h1>Ремонт компьютеров</h1>
+				</div>
+				<div class="col-12 col-md-6">
+					<form class="call-back" id="callback">
+						<input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+						<input type="text" name="phone" id="phone" placeholder="Введите ваш телефон" required>
+						<textarea name="message" name="comment" id="comment" placeholder="Опишите вашу проблему"
+							required></textarea>
+						<button type="submit" class="button" id="callback" for="callback">Отправить</button>
+						<div class="error_callback"></div>
+					</form>
+				</div>
+				<ul class="col-12 col-md-6">
+					<li>Ремонт компьютера</li>
+					<li>Установка, настройка Windows XP / 7 / 8 6</li>
+					<li>Установка, настройка Windows XP / 7 / 8 с переносом данных (документы, фото)</li>
+					<li>Установка пакета Microsoft Office 2003/2007/2010</li>
+					<li>Установка драйверов</li>
+					<li>Настройка доступа в Интернет</li>
+					<li>Установка сервисного программного обеспечения (кодеки, улучшения и т.д.)</li>
+					<li>Настройка другого программного обеспечения за 1 шт</li>
+					<li>Установка и настройка антивирусного ПО</li>
+					<li>Разбивка жесткого диска</li>
+					<li>Снятие банера от СМС вымогателей</li>
+					<li>Удаление нежелательных всплывающих баннеров и заставок с рабочего стола</li>
+					<li>Лечение от вирусов</li>
+					<li>Настройка почтового клиента</li>
+					<li>Очистка компьютера от ненужных файлов, мусора, хлама</li>
+					<li>Очистка системного блока от пыли</li>
+					<li>Оптимизация работы ПК (ускорение работы и восстановление рабочего состояния)</li>
+					<li>Диагностика неисправного системного блока</li>
+					<li>Установка/настройка внешнего устройства (сканер, принтер, фотоаппарат и т.д.)</li>
+					<li>Установка/замена внутренних устройств (процессор, видеокарта, модулей памяти, блок
+						питания)</li>
+					<li>Установка/замена жёсткого диска с переносом данных и установкой системы</li>
+					<li>Установка/замена материнской платы с перенастройкой системы</li>
+					<li>Замена термопасты</li>
+					<li>Восстановление ОС</li>
+					<li>Сброс пароля Windows</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="phone_form" class="mfp-hide white-popup-block">
+		<div class="container">
+			<div class="row">
+				<div class="title col-12">
+					<h1>Ремонт телефонов</h1>
+				</div>
+				<div class="col-12 col-md-6">
+					<form class="call-back" id="callback">
+						<input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+						<input type="text" name="phone" id="phone" placeholder="Введите ваш телефон" required>
+						<textarea name="message" name="comment" id="comment" placeholder="Опишите вашу проблему"
+							required></textarea>
+						<button type="submit" class="button" id="callback" for="callback">Отправить</button>
+						<div class="error_callback"></div>
+					</form>
+				</div>
+				<ul class="col-12 col-md-6">
+					<li>Ремонт телефона</li>
+					<li>Замена программного обеспечения телефона</li>
+					<li>Обновление и перепрошивка)</li>
+					<li>Разблокировка</li>
+					<li>Замена дисплея</li>
+					<li>Замена корпусных элементов</li>
+					<li>Замена батарейки</li>
+					<li>Чистка от коррозии</li>
+					<li>Замена touch screen (сенсорного дисплея)</li>
+					<li>Замена джойстика, кнопок</li>
+					<li>Замена шлейфов и микросхем</li>
+					<li>Замена динамика, микрофона</li>
+					<li>Замена разъема зарядки, наушников</li>
+					<li>Восстановление после попадания влаги</li>
+					<li>Восстановление после ударов</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="nout_form" class="mfp-hide white-popup-block">
+		<div class="container">
+			<div class="row">
+				<div class="title col-12">
+					<h1>Ремонт телефонов</h1>
+				</div>
+				<div class="col-12 col-md-6">
+					<form class="call-back" id="callback">
+						<input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+						<input type="text" name="phone" id="phone" placeholder="Введите ваш телефон" required>
+						<textarea name="message" name="comment" id="comment" placeholder="Опишите вашу проблему"
+							required></textarea>
+						<button type="submit" class="button" id="callback" for="callback">Отправить</button>
+						<div class="error_callback"></div>
+					</form>
+				</div>
+				<ul class="col-12 col-md-6">
+					<li>Модернизация ноутбуков</li>
+					<li>Ремонт материнских плат ноутбуков</li>
+					<li>Замена комплектующих ноутбуков</li>
+					<li>Замена ЖК матриц ноутбуков и КПК</li>
+					<li>Ремонт видеокарт ноутбуков</li>
+					<li>Ремонт и замена клавиатур ноутбуков</li>
+					<li>Установка и настройка программного обеспечения на ноутбуки, восстановление операционной системы
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="plan_form" class="mfp-hide white-popup-block">
+		<div class="container">
+			<div class="row">
+				<div class="title col-12">
+					<h1>Ремонт планшетов</h1>
+				</div>
+				<div class="col-12 col-md-6">
+					<form class="call-back" id="callback">
+						<input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+						<input type="text" name="phone" id="phone" placeholder="Введите ваш телефон" required>
+						<textarea name="message" name="comment" id="comment" placeholder="Опишите вашу проблему"
+							required></textarea>
+						<button type="submit" class="button" id="callback" for="callback">Отправить</button>
+						<div class="error_callback"></div>
+					</form>
+				</div>
+				<ul class="col-12 col-md-6">
+					<li>Замена тачскрина</li>
+					<li>Замена дисплея</li>
+					<li>Замена центральной платы \ ремонт</li>
+					<li>Замена слухового динамика</li>
+					<li>Замена дисплейного модуля</li>
+					<li>Замена полифонического динамика</li>
+					<li>Замена микрофона</li>
+					<li>Замена корпусной части \ ремонт</li>
+					<li>Замена сим коннектора</li>
+					<li>замена АКБ</li>
+					<li>Замена разъема гарнитуры \ ремонт</li>
+					<li>Замена шлейфа кнопки включения</li>
+					<li>Замена шлейфа кнопок громкости</li>
+					<li>Замена передней камеры</li>
+					<li>Замена задней камеры</li>
+					<li>Замена разъема питания \ ремонт</li>
+					<li>Замена шлейфа Wi-Fi</li>
+					<li>Замена контроллера питания</li>
+					<li>Устранение неполадок сети</li>
+					<li>Чистка после попадания влаги</li>
+					<li>Смена ПО</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<footer>
 		<div class="container-fluid footer_top">
 			<div class="container">
@@ -474,21 +632,24 @@
 						</div>
 						<div class="description">
 							<ul>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#advanced">Ремонт
 										ноутбука</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#advanced">Ремонт
 										iPhone</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт iPad</a>
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#advanced">Ремонт
+										iPad</a>
 								</li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#advanced">Ремонт
 										планшета</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#advanced">Ремонт
 										смарфона</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#advanced">Ремонт
 										гаджетов</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Востановление
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a
+										href="#advanced">Востановление
 										данных</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Резервное
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a
+										href="#advanced">Резервное
 										копирование</a></li>
 							</ul>
 						</div>
@@ -500,13 +661,19 @@
 						<div class="description">
 							<p>Вы можете оставить нам свой телефон или адрес электронной почты. Мы с вами свяжемся в
 								скором времени.</p>
-							<form action="send.php" class="email">
-								<input type="email" placeholder="example@example.com" required><button type="submit"><i
+							<form class="email form" id="footer_email">
+								<input name="email" id="email" type="email" placeholder="example@example.com" required>
+								<button class="button" type="submit" form="footer_email" id="footer_email_submit"><i
 										class="fa fa-chevron-right" aria-hidden="true"></i></button>
+								<div id="error_email">
+								</div>
 							</form>
-							<form action="send.php">
-								<input type="text" placeholder="+7(900) 000-00-00" required><button type="submit"><i
-										class="fa fa-chevron-right" aria-hidden="true"></i></button>
+							<form class="phone form" id="footer_phone">
+								<input type="text" placeholder="+7(900) 000-00-00" required>
+								<button class="button" type="submit" for="footer_phone"><i class="fa fa-chevron-right"
+										aria-hidden="true"></i></button>
+								<div id="error_phone">
+								</div>
 							</form>
 						</div>
 					</div>

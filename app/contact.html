@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/header_footer.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/contact.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -59,11 +60,11 @@
 						</button>
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
-								<li class="nav-item active"><a href="index.html" class="nav-link">Главная</a></li>
+								<li class="nav-item "><a href="index.html" class="nav-link">Главная</a></li>
 								<li class="nav-item"><a href="about_us.html" class="nav-link">О нас</a></li>
 								<li class="nav-item"><a href="services.html" class="nav-link">Услуги</a></li>
 								<li class="nav-item"><a href="gallery.html" class="nav-link">Галерея</a></li>
-								<li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+								<li class="nav-item active"><a href="#" class="nav-link">Контакты</a></li>
 							</ul>
 					</nav>
 					<div class="social col-lg-2 col-6">
@@ -191,21 +192,29 @@
 						</div>
 						<div class="description">
 							<ul>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a
+										href="services.html">Ремонт
 										ноутбука</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a
+										href="services.html">Ремонт
 										iPhone</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт iPad</a>
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a
+										href="services.html">Ремонт iPad</a>
 								</li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a
+										href="services.html">Ремонт
 										планшета</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a
+										href="services.html">Ремонт
 										смарфона</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Ремонт
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a
+										href="services.html">Ремонт
 										гаджетов</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Востановление
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a
+										href="services.html">Востановление
 										данных</a></li>
-								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Резервное
+								<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a
+										href="services.html">Резервное
 										копирование</a></li>
 							</ul>
 						</div>
@@ -217,13 +226,19 @@
 						<div class="description">
 							<p>Вы можете оставить нам свой телефон или адрес электронной почты. Мы с вами свяжемся в
 								скором времени.</p>
-							<form action="send.php" class="email">
-								<input type="email" placeholder="example@example.com" required><button type="submit"><i
+							<form class="email form" id="footer_email">
+								<input name="email" id="email" type="email" placeholder="example@example.com" required>
+								<button class="button" type="submit" form="footer_email" id="footer_email_submit"><i
 										class="fa fa-chevron-right" aria-hidden="true"></i></button>
+								<div id="error_email">
+								</div>
 							</form>
-							<form action="send.php">
-								<input type="text" placeholder="+7(900) 000-00-00" required><button type="submit"><i
-										class="fa fa-chevron-right" aria-hidden="true"></i></button>
+							<form class="phone form" id="footer_phone">
+								<input type="text" placeholder="+7(900) 000-00-00" required>
+								<button class="button" type="submit" for="footer_phone"><i class="fa fa-chevron-right"
+										aria-hidden="true"></i></button>
+								<div id="error_phone">
+								</div>
 							</form>
 						</div>
 					</div>

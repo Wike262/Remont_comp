@@ -75,7 +75,8 @@ a {
     content: '\f105'; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  min-width: 400px; }
   body header .head_top {
     margin: 30px 0; }
     @media screen and (max-width: 576px) {
@@ -229,6 +230,9 @@ body {
         body header .container-fluid:nth-child(2) .container .head_lower .social ul li a {
           display: block;
           padding: 15px 5px; }
+          @media screen and (max-width: 576px) {
+            body header .container-fluid:nth-child(2) .container .head_lower .social ul li a {
+              padding: 15px 2px; } }
           body header .container-fluid:nth-child(2) .container .head_lower .social ul li a i {
             color: #f69323;
             font-size: 17px !important;
@@ -393,6 +397,11 @@ body {
           color: #ffffff; }
           body footer .footer_top .service_serv .description ul li a:hover {
             color: #f69323; }
+      body footer .footer_top .callback .description .email, body footer .footer_top .callback .description .phone {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
       body footer .footer_top .callback .description input {
         border: none;
         padding-left: 10px;
@@ -408,6 +417,8 @@ body {
           color: #ffffff; }
         body footer .footer_top .callback .description button:hover {
           background-color: #dd7a09; }
+      body footer .footer_top .callback .description .error i:nth-child(1) {
+        display: none; }
     body footer .footer_lower {
       border-top: 1px solid #444;
       background-color: #1a1a1a; }

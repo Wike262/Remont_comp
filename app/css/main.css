@@ -1,4 +1,4 @@
-.transition, body .slider .container .row .buttons button, body .about_us .container .row .advanced .item, body .about_us .container .row .advanced .item:hover .description a, body .process .container .row:last-child .title span, body .process .container .row:last-child .title h3, body .call_back .container .row .description form input, body .call_back .container .row .description form textarea, body .call_back .container .row .description form button, body .counter .container .row:last-child .item h3, body .counter .container .row:last-child .item p, body .counter .container .row:last-child .item p span, body .opinion .slick-dots li button:before, body .gallery .container-fluid .row .item a:after, body .team .container .row .item > a:before, body .team .container .row .item .social a, body .team .container .row .item .social a i {
+.transition, body .slider .container .row .buttons button, body .about_us .container .row .advanced .item, body .about_us .container .row .advanced .item:hover .description a, body .process .container .row:last-child .title span, body .process .container .row:last-child .title h3, body .call_back .container .row .description form input, body .call_back .container .row .description form textarea, body .call_back .container .row .description form button, body .counter .container .row:last-child .item h3, body .counter .container .row:last-child .item p, body .counter .container .row:last-child .item p span, body .opinion .slick-dots li button:before, body .gallery .container-fluid .row .item a:after, body .team .container .row .item > a:before, body .team .container .row .item .social a, body .team .container .row .item .social a i, body .services .container .row .advanced .item, body .services .container .row .advanced .item:hover .description a, #comp_form .container .row .callback input, #comp_form .container .row .callback textarea, #phone_form .container .row .callback input, #phone_form .container .row .callback textarea, #nout_form .container .row .callback input, #nout_form .container .row .callback textarea, #plan_form .container .row .callback input, #plan_form .container .row .callback textarea, #comp_form .container .row .callback button, #phone_form .container .row .callback button, #nout_form .container .row .callback button, #plan_form .container .row .callback button {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; }
@@ -309,7 +309,8 @@ body .call_back {
       padding: 10px;
       width: 70%;
       margin: 10px;
-      border: 2px solid #dfdfdf; }
+      border: none;
+      border-bottom: 2px solid #dfdfdf; }
       body .call_back .container .row .description form input:focus, body .call_back .container .row .description form textarea:focus {
         border-color: #f69323; }
     body .call_back .container .row .description form button {
@@ -665,3 +666,122 @@ body .gallery .page_title {
         font-weight: bold;
         font-size: 34px;
         text-transform: uppercase; }
+
+body .services .container .row .title {
+  text-align: center;
+  margin: 40px 0;
+  margin-top: 60px; }
+  body .services .container .row .title h2 {
+    font-size: 36px;
+    font-weight: bold; }
+
+body .services .container .row .description {
+  color: #646e7a;
+  text-align: center;
+  font-size: 18px; }
+
+body .services .container .row .advanced {
+  padding: 10px; }
+  body .services .container .row .advanced .item {
+    height: 100%;
+    background: #f2f2f2;
+    border: 1px solid #dfdfdf;
+    padding: 10px; }
+    body .services .container .row .advanced .item .description {
+      text-align: left;
+      padding: 20px;
+      height: 100%;
+      background: #ffffff;
+      position: relative; }
+      body .services .container .row .advanced .item .description i {
+        color: #cccccc;
+        font-size: 70px !important; }
+      body .services .container .row .advanced .item .description h3 {
+        color: #24262a;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 20px 0; }
+      body .services .container .row .advanced .item .description p {
+        color: #333333;
+        font-size: 14px; }
+      body .services .container .row .advanced .item .description a {
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        right: 0;
+        background-color: #f69323;
+        border: none;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 35px;
+        width: 35px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        body .services .container .row .advanced .item .description a i {
+          font-size: 16px !important;
+          color: #ffffff; }
+    body .services .container .row .advanced .item:hover {
+      background: #fcdbb6; }
+      body .services .container .row .advanced .item:hover .description i {
+        color: #f69323; }
+      body .services .container .row .advanced .item:hover .description a {
+        background: #333333; }
+
+#comp_form, #phone_form, #nout_form, #plan_form {
+  background: #ffffff;
+  padding: 70px 0; }
+  #comp_form .container .row ul, #phone_form .container .row ul, #nout_form .container .row ul, #plan_form .container .row ul {
+    list-style-type: disc; }
+  #comp_form .container .row .callback, #phone_form .container .row .callback, #nout_form .container .row .callback, #plan_form .container .row .callback {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative; }
+    @media screen and (max-width: 576px) {
+      #comp_form .container .row .callback, #phone_form .container .row .callback, #nout_form .container .row .callback, #plan_form .container .row .callback {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 100px; } }
+    #comp_form .container .row .callback input, #comp_form .container .row .callback textarea, #phone_form .container .row .callback input, #phone_form .container .row .callback textarea, #nout_form .container .row .callback input, #nout_form .container .row .callback textarea, #plan_form .container .row .callback input, #plan_form .container .row .callback textarea {
+      height: 70px;
+      padding: 10px;
+      width: 100%;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid #dfdfdf; }
+      #comp_form .container .row .callback input:focus, #comp_form .container .row .callback textarea:focus, #phone_form .container .row .callback input:focus, #phone_form .container .row .callback textarea:focus, #nout_form .container .row .callback input:focus, #nout_form .container .row .callback textarea:focus, #plan_form .container .row .callback input:focus, #plan_form .container .row .callback textarea:focus {
+        border-color: #f69323; }
+    #comp_form .container .row .callback button, #phone_form .container .row .callback button, #nout_form .container .row .callback button, #plan_form .container .row .callback button {
+      background-color: #f69323;
+      border: 2px solid #f69323;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      color: #ffffff;
+      font-weight: bold;
+      text-transform: uppercase;
+      height: 50px;
+      width: 170px;
+      cursor: pointer;
+      margin-top: 30px; }
+      #comp_form .container .row .callback button:hover, #phone_form .container .row .callback button:hover, #nout_form .container .row .callback button:hover, #plan_form .container .row .callback button:hover {
+        background: #ffffff;
+        color: #f69323; }
