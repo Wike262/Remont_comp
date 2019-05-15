@@ -1,0 +1,137 @@
+$PRIMARY_COLOR: #f69323
+$sm: 576px
+.transition
+	transition: .3s all ease
+.aft-bef
+	content: ''
+	position: absolute
+body
+	.contact
+		.container-fluid
+			.row
+				width: 100%
+				.map
+					width: 100%
+			.page_title
+				.row
+					background-image: url(../img/slide2.jpg)
+					display: flex
+					justify-content: center
+					align-items: center
+					height: 300px
+					.title
+						h1
+							color: #ffffff
+							font-weight: bold
+							font-size: 36px
+							text-transform: uppercase
+		.container
+			.row
+				.callback
+					margin: 70px 0
+					h3
+						position: relative
+						padding-bottom: 20px
+						border-bottom: 5px solid #eeeeee
+						&:after
+							@extend .aft-bef
+							bottom: -5px
+							left: 0
+							width: 30px
+							height: 5px
+							background-color: $PRIMARY_COLOR
+					form
+						display: flex
+						flex-wrap: wrap
+						position: relative
+						@media screen and(max-width: $sm)
+							justify-content: center
+							margin-bottom: 100px
+						input,textarea
+							@extend .transition
+							padding: 10px
+							width: 100%
+							margin: 10px 0
+							border: none
+							border-bottom: 2px solid #dfdfdf
+							&:focus
+								border-color: $PRIMARY_COLOR
+						button
+							@extend .transition
+							background-color: $PRIMARY_COLOR
+							border: 2px solid $PRIMARY_COLOR
+							border-radius: 5px
+							color: #ffffff
+							font-weight: bold
+							text-transform: uppercase
+							height: 50px
+							width: 170px
+							cursor: pointer
+							margin-top: 30px
+							&:hover
+								background: #ffffff
+								color: $PRIMARY_COLOR
+				.contact_us
+					margin: 70px 0
+					h3
+						position: relative
+						padding-bottom: 20px
+						border-bottom: 5px solid #eeeeee
+						&:after
+							@extend .aft-bef
+							bottom: -5px
+							left: 0
+							width: 30px
+							height: 5px
+							background-color: $PRIMARY_COLOR
+					ul
+						margin-top: 20px
+						li
+							display: flex
+							align-items: center
+							margin: 10px 0
+							i
+								@extend .transition
+								display: flex
+								width: 40px
+								height: 40px
+								justify-content: center
+								align-items: center
+								background-color: $PRIMARY_COLOR
+								font-size: 24px !important
+								color: #ffffff
+								margin-right: 30px
+					.social
+						h3
+							margin-top: 60px
+						ul
+							display: flex
+							li
+								&:nth-child(1)
+									a
+										i
+											background-color: #2795e9
+											margin-right: 15px
+											&:hover
+												transform: scale(1.2)
+								&:nth-child(2)
+									a
+										i
+											background-color: #3b5998
+											margin-right: 15px
+											&:hover
+												transform: scale(1.2)
+								&:nth-child(3)
+									a
+										i
+											background-color: #26b84b
+											margin-right: 15px
+											&:hover
+												transform: scale(1.2)
+								&:nth-child(4)
+									a
+										i
+											margin-right: 15px
+											background-color: #9f191f
+											&:hover
+												transform: scale(1.2)

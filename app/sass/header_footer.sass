@@ -1,4 +1,5 @@
 $PRIMARY_COLOR: #f69323;
+$sm: 576px
 *
 	font-family: 'Poppins',sans-serif !important
 	outline: none
@@ -45,18 +46,31 @@ a
 			width: 60px
 			height: 150px
 			background: rgba(0,0,0,.5)
+			@media screen and(max-width: $sm)
+				width: 40px
+				height: 70px
+				font-size: 30px
 	.slick-next
 		left: auto
 		right: 0
 		&:before
 			content: '\f105'
 body
+	overflow-x: hidden
 	header
 		.head_top
 			margin: 30px 0
+			.logotype
+				@media screen and (max-width: $sm)
+					display: flex
+					align-items: center
+					justify-content: center
 			.order_call
 				display: flex
 				justify-content: flex-end
+				@media screen and (max-width: $sm)
+					margin-top: 20px
+					justify-content: center
 				button
 					background: transparent
 					text-transform: uppercase
@@ -73,6 +87,8 @@ body
 			.info
 				display: flex
 				flex-direction: row
+				@media screen and (max-width: $sm)
+					justify-content: center
 				.icon
 					display: flex
 					justify-content: center
@@ -96,7 +112,13 @@ body
 				.head_lower
 					display: flex
 					justify-content: space-between
+					button
+						i
+							color: $PRIMARY_COLOR
+							font-size: 20px !important
+							padding: 20px
 					.header_navigation
+						padding: 0
 						ul
 							display: flex
 							li
@@ -123,8 +145,13 @@ body
 									padding: 25px 20px
 									display: block
 									color: #ffffff
+								@media screen and (max-width: $sm)
+									&:after
+										display: none
 							.active
 								background-color: $PRIMARY_COLOR
+								@media screen and(max-width: $sm)
+									background-color: transparent
 								&:after
 									display: none
 					.social
@@ -175,7 +202,12 @@ body
 							width: 100%
 							height: 1px
 							background-color: gray
+						@media screen and(max-width: $sm)
+							&:after
+								display: none
 				.social
+					@media screen and(max-width: $sm)
+						margin-bottom: 30px
 					ul
 						display: flex
 						li
@@ -243,9 +275,17 @@ body
 			.service_serv
 				.description
 					ul
+						@media screen and(max-width: $sm)
+							display: flex
+							flex-direction: row
+							flex-wrap: wrap
+							margin-bottom: 30px
 						li
 							display: flex
 							align-items: center
+							width: fit-content
+							@media screen and(max-width: $sm)
+								width: 50%
 							i
 								color: $PRIMARY_COLOR
 								margin-right: 10px
@@ -260,6 +300,7 @@ body
 						border: none
 						padding-left: 10px
 						height: 42px
+						margin-bottom: 10px
 					button
 						height: 42px
 						width: 45px

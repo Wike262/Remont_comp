@@ -1,4 +1,5 @@
-$PRIMARY_COLOR: #f69323;
+$PRIMARY_COLOR: #f69323
+$sm: 576px
 .transition
 	transition: .3s all ease
 .aft-bef
@@ -13,12 +14,16 @@ body
 				width: 100%
 				height: 100%
 				background: url('../img/slide1.jpg')
+				@media screen and (max-width: $sm)
+					padding: 0 70px
 		.slide2
 			height: 80vh
 			.container-fluid
 				width: 100%
 				height: 100%
 				background: url('../img/slide2.jpg')
+				@media screen and (max-width: $sm)
+					padding: 0 70px
 		.container
 			height: 100%
 			.row
@@ -31,6 +36,8 @@ body
 					h1
 						font-size: 70px
 						font-weight: bold
+						@media screen and(max-width: $sm)
+							font-size: 40px
 				.description
 					font-size: 20px
 				.buttons
@@ -45,6 +52,7 @@ body
 						font-weight: bold
 						font-size: 14px
 						margin-right: 20px
+						margin-bottom: 20px
 						&:nth-child(1)
 							background: #ffffff
 							color: $PRIMARY_COLOR
@@ -68,7 +76,7 @@ body
 					margin: 40px 0
 					margin-top: 60px
 					h2
-						font-size: 40px
+						font-size: 36px
 						font-weight: bold
 				.description
 					color: #646e7a
@@ -146,7 +154,7 @@ body
 							margin-top: 5px
 							font-weight: bold
 							text-transform: uppercase
-							font-size: 24px
+							font-size: 26px
 					.baners
 						h3
 							text-transform: uppercase
@@ -171,6 +179,8 @@ body
 							&:last-child
 								background: #ffffff
 								color: #333333
+							@media screen and(max-width: $sm)
+								padding: 15px 5px
 	.process
 		background: url('../img/process_bg.jpg')
 		background-size: cover
@@ -196,6 +206,9 @@ body
 						justify-content: center
 						align-items: center
 						margin: 0
+						@media screen and (max-width: $sm)
+							justify-content: flex-start
+							margin-left: 20px
 						span
 							@extend .transition
 							color: $PRIMARY_COLOR
@@ -215,7 +228,7 @@ body
 								color: #ffffff
 							h3
 								color: $PRIMARY_COLOR
-	.callback
+	.call_back
 		margin-top: 70px
 		.container
 			.row
@@ -224,13 +237,18 @@ body
 						h2
 							text-transform: uppercase
 							font-weight: bold
-							font-size: 24px
+							font-size: 26px
 						p
 							font-size: 14px
+						@media screen and(max-width: $sm)
+							text-align: center
 					form
 						display: flex
 						flex-wrap: wrap
 						position: relative
+						@media screen and(max-width: $sm)
+							justify-content: center
+							margin-bottom: 100px
 						input,textarea
 							@extend .transition
 							padding: 10px
@@ -281,6 +299,8 @@ body
 					display: flex
 					justify-content: center
 					.item
+						@media screen and(max-width: $sm)
+							text-align: center
 						h3
 							@extend .transition
 							font-size: 60px
@@ -295,3 +315,228 @@ body
 							span
 								@extend .transition
 								color: #ffffff
+	.opinion
+		@media screen 
+			margin-top: 70px
+		.slick-next,.slick-prev
+			display: none !important
+		.slick-dots
+			display: flex
+			justify-content: center
+			align-items: center
+			li
+				margin-right: 20px
+				button
+					position: relative
+					color: transparent
+					background: transparent
+					border: 1px solid #dfdfdf
+					display: flex
+					height: 20px
+					width: 20px
+					cursor: pointer
+					&:before
+						@extend .transition
+						@extend .aft-bef
+						background: transparent
+						top: 0
+						bottom: 0
+						left: 0
+						right: 0
+						margin: 3px
+			.slick-active
+				button
+					&:before
+						background: $PRIMARY_COLOR
+		.container
+			.row
+				align-items: center
+				.description
+					text-align: center
+					h2
+						margin-bottom: 30px
+						font-size: 34px
+						font-weight: bold
+				.slider_opinion
+					.item
+						display: flex
+						justify-content: center
+						align-items: center
+						flex-direction: column
+						text-align: center
+						p
+							font-style: italic
+							color: #333333
+							font-size: 20px
+							letter-spacing: .02em
+							line-height: 32px
+						h4
+							text-transform: uppercase
+							font-weight: bold
+							font-size: 16px
+	.gallery
+		margin-top: 70px
+		.container
+			.row
+				.title
+					text-align: center
+					h2
+						font-weight: bold
+						font-size: 36px
+				.description
+					text-align: center
+					margin-bottom: 70px
+					display: flex
+					justify-content: center
+					align-items: center
+					p
+						width: 60%
+						color: #646e7a
+						font-size: 16px
+						@media screen and(max-width: $sm)
+							width: 100%
+							margin-top: 20px
+		.container-fluid
+			.row
+				.item
+					padding: 5px
+					a
+						position: relative
+						display: block
+						img
+							width: 100%
+							height: 400px
+							@media screen 
+								object-fit: cover
+						&:after
+							@extend .aft-bef
+							@extend .transition
+							top: -5px
+							bottom: -5px
+							right: -5px
+							left: -5px
+							border: 5px solid transparent
+						&:before
+							z-index: 100
+							font-family: FontAwesome;
+							content: '\f1c5';
+							position: absolute;
+							top: 50%
+							left: 50%
+							transform: translateY(-50%)
+							color: transparent
+							text-align: center;
+							background: transparent
+							width: 42px;
+							height: 42px;
+							line-height: 42px;
+							-webkit-border-radius: 100%;
+							-moz-border-radius: 100%;
+							border-radius: 100%;
+							-webkit-background-clip: padding-box;
+							-moz-background-clip: padding;
+							background-clip: padding-box;
+							-webkit-transition: all .5s ease-out;
+							-moz-transition: all .5s ease-out;
+							-o-transition: all .5s ease-out;
+							transition: all .5s ease-out;
+						&:hover
+							&:after
+								background: rgba(246,147,35,.5);
+								border-color: $PRIMARY_COLOR
+							&:before
+								background: #ffffff
+								color: $PRIMARY_COLOR
+	.team
+		background: #f9fafb
+		padding-top: 70px
+		padding-bottom: 70px
+		.container
+			.row
+				.title
+					margin-bottom: 30px
+					text-align: center
+					h2
+						font-weight: bold
+						font-size: 36px
+				.description
+					margin-bottom: 50px
+					p
+						text-align: center
+						color: #646e7a
+						font-size: 16px
+				.item
+					text-align: center
+					&>
+						a
+							cursor: default
+							display: block
+							position: relative
+							img
+								width: 100%
+								margin-bottom: 30px
+							&:before
+								@extend .aft-bef
+								@extend .transition
+								top: 0
+								bottom: 30px
+								right: 0
+								left: 0
+								background: #f69323
+								opacity: 0
+							&:hover
+								&:before
+									opacity: .2
+							&:active
+								pointer-events: none
+					h4
+						font-weight: bold
+						font-size: 18px
+					p
+						color: #595959
+						font-size: 14px
+					.social
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						@media screen and(max-width: $sm)
+							margin-bottom: 30px
+						a
+							@extend .transition
+							margin: 0 5px
+							display: flex
+							justify-content: center
+							align-items: center
+							width: 30px
+							height: 30px
+							border: 1px solid #dfdfdf
+							border-radius: 50%
+							i
+								@extend .transition
+								color: $PRIMARY_COLOR
+							&:hover
+								background: lighten($PRIMARY_COLOR, 10%)
+								i
+									color: #ffffff
+									transform: scale(1.2)
+	.gallery
+		.page_title
+			margin-top: -70px
+			margin-bottom: 70px
+			.container-fluid
+				padding: 0
+				background-image: url(../img/slide2.jpg)
+				height: 300px
+				.row
+					width: 100%
+					display: flex
+					justify-content: center
+					align-items: center
+					height: 100%
+					.title
+						h1
+							color: #ffffff
+							font-weight: bold
+							font-size: 34px
+							text-transform: uppercase

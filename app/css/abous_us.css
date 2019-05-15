@@ -1,0 +1,67 @@
+.transition {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+
+.aft-bef {
+  content: '';
+  position: absolute; }
+
+body .about_us .container-fluid {
+  padding: 0;
+  background: url(../img/counter_bg.jpg);
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  height: 300px; }
+  body .about_us .container-fluid .row {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    body .about_us .container-fluid .row .title h1 {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 36px;
+      text-transform: uppercase; }
+
+body .about_us .container .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  body .about_us .container .row .image {
+    margin-bottom: 50px; }
+    body .about_us .container .row .image img {
+      width: 100%; }
+  body .about_us .container .row .who_we h3, body .about_us .container .row .why_us h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26px; }
+  body .about_us .container .row .who_we p, body .about_us .container .row .why_us p {
+    color: #333333;
+    font-size: 14px; }
+  body .about_us .container .row .who_we h3 {
+    text-align: right; }
+  body .about_us .container .row .who_we p {
+    text-align: right; }
+  body .about_us .container .row .why_us h3 {
+    text-align: left; }
+  body .about_us .container .row .why_us p {
+    text-align: left; }
