@@ -1,0 +1,167 @@
+.transition, body .contact .container .row .callback form input, body .contact .container .row .callback form textarea, body .contact .container .row .callback form button, body .contact .container .row .contact_us ul li i {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+
+.aft-bef, body .contact .container .row .callback h3:after, body .contact .container .row .contact_us h3:after {
+  content: '';
+  position: absolute; }
+
+body .contact .container-fluid {
+  padding: 0; }
+  body .contact .container-fluid .row {
+    margin: 0;
+    width: 100%; }
+    body .contact .container-fluid .row .map {
+      width: 100%; }
+  body .contact .container-fluid .page_title .row {
+    background-image: url(../img/slide2.jpg);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 300px; }
+    body .contact .container-fluid .page_title .row .title h1 {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 36px;
+      text-transform: uppercase; }
+
+body .contact .container .row .callback {
+  margin: 70px 0; }
+  body .contact .container .row .callback h3 {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #eeeeee; }
+    body .contact .container .row .callback h3:after {
+      bottom: -5px;
+      left: 0;
+      width: 30px;
+      height: 5px;
+      background-color: #f69323; }
+  body .contact .container .row .callback form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    position: relative; }
+    @media screen and (max-width: 576px) {
+      body .contact .container .row .callback form {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 100px; } }
+    body .contact .container .row .callback form input, body .contact .container .row .callback form textarea {
+      padding: 10px;
+      width: 100%;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid #dfdfdf; }
+      body .contact .container .row .callback form input:focus, body .contact .container .row .callback form textarea:focus {
+        border-color: #f69323; }
+    body .contact .container .row .callback form button {
+      background-color: #f69323;
+      border: 2px solid #f69323;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      color: #ffffff;
+      font-weight: bold;
+      text-transform: uppercase;
+      height: 50px;
+      width: 170px;
+      cursor: pointer;
+      margin-top: 30px; }
+      body .contact .container .row .callback form button:hover {
+        background: #ffffff;
+        color: #f69323; }
+
+body .contact .container .row .contact_us {
+  margin: 70px 0; }
+  body .contact .container .row .contact_us h3 {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #eeeeee; }
+    body .contact .container .row .contact_us h3:after {
+      bottom: -5px;
+      left: 0;
+      width: 30px;
+      height: 5px;
+      background-color: #f69323; }
+  body .contact .container .row .contact_us ul {
+    margin-top: 20px; }
+    body .contact .container .row .contact_us ul li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 10px 0; }
+      body .contact .container .row .contact_us ul li i {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: #f69323;
+        font-size: 24px !important;
+        color: #ffffff;
+        margin-right: 30px; }
+  body .contact .container .row .contact_us .social h3 {
+    margin-top: 60px; }
+  body .contact .container .row .contact_us .social ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    body .contact .container .row .contact_us .social ul li:nth-child(1) a i {
+      background-color: #2795e9;
+      margin-right: 15px; }
+      body .contact .container .row .contact_us .social ul li:nth-child(1) a i:hover {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
+    body .contact .container .row .contact_us .social ul li:nth-child(2) a i {
+      background-color: #3b5998;
+      margin-right: 15px; }
+      body .contact .container .row .contact_us .social ul li:nth-child(2) a i:hover {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
+    body .contact .container .row .contact_us .social ul li:nth-child(3) a i {
+      background-color: #26b84b;
+      margin-right: 15px; }
+      body .contact .container .row .contact_us .social ul li:nth-child(3) a i:hover {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
+    body .contact .container .row .contact_us .social ul li:nth-child(4) a i {
+      margin-right: 15px;
+      background-color: #9f191f; }
+      body .contact .container .row .contact_us .social ul li:nth-child(4) a i:hover {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }

@@ -180,7 +180,7 @@ body
 								background: #ffffff
 								color: #333333
 							@media screen and(max-width: $sm)
-								padding: 15px 5px
+								padding: 15px 2px
 	.process
 		background: url('../img/process_bg.jpg')
 		background-size: cover
@@ -604,6 +604,10 @@ body
 								a
 									@extend .transition
 									background: #333333
+.mfp-bg
+	min-width: 400px
+.mfp-wrap
+	min-width: 400px
 #comp_form,#phone_form,#nout_form,#plan_form
 		background: #ffffff
 		padding: 70px 0
@@ -611,7 +615,8 @@ body
 			.row
 				ul
 					list-style-type: disc
-				.callback
+					margin: 0 20px
+				.call-back
 					display: flex
 					flex-wrap: wrap
 					align-items: flex-start
