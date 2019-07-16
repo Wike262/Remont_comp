@@ -66,13 +66,16 @@ body
 					display: flex
 					align-items: center
 					justify-content: center
+				p
+					font-weight: bold
+					margin-left: 30px
 			.order_call
 				display: flex
 				justify-content: flex-end
 				@media screen and (max-width: $sm)
 					margin-top: 20px
 					justify-content: center
-				button
+				a
 					background: transparent
 					text-transform: uppercase
 					font-weight: bold
@@ -80,6 +83,7 @@ body
 					border: 2px solid $PRIMARY_COLOR
 					padding: 10px 20px
 					cursor: pointer
+					height: fit-content
 					@extend .transition
 					&:hover
 						transform: scale(1.1)

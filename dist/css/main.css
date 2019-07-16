@@ -1,4 +1,4 @@
-.transition, body .slider .container .row .buttons button, body .about_us .container .row .advanced .item, body .about_us .container .row .advanced .item:hover .description a, body .process .container .row:last-child .title span, body .process .container .row:last-child .title h3, body .call_back .container .row .description form input, body .call_back .container .row .description form textarea, body .call_back .container .row .description form button, body .counter .container .row:last-child .item h3, body .counter .container .row:last-child .item p, body .counter .container .row:last-child .item p span, body .opinion .slick-dots li button:before, body .gallery .container-fluid .row .item a:after, body .team .container .row .item > a:before, body .team .container .row .item .social a, body .team .container .row .item .social a i, body .services .container .row .advanced .item, body .services .container .row .advanced .item:hover .description a, #comp_form .container .row .call-back input, #comp_form .container .row .call-back textarea, #phone_form .container .row .call-back input, #phone_form .container .row .call-back textarea, #nout_form .container .row .call-back input, #nout_form .container .row .call-back textarea, #plan_form .container .row .call-back input, #plan_form .container .row .call-back textarea, #comp_form .container .row .call-back button, #phone_form .container .row .call-back button, #nout_form .container .row .call-back button, #plan_form .container .row .call-back button {
+.transition, body .slider .container .row .buttons a, body .about_us .container .row .advanced .item, body .about_us .container .row .advanced .item:hover .description a, body .process .container .row:last-child .title span, body .process .container .row:last-child .title h3, body .call_back .container .row .description form input, body .call_back .container .row .description form textarea, body .call_back .container .row .description form button, body .counter .container .row:last-child .item h3, body .counter .container .row:last-child .item p, body .counter .container .row:last-child .item p span, body .opinion .slick-dots li button:before, body .gallery .container-fluid .row .item a:after, body .team .container .row .item > a:before, body .team .container .row .item .social a, body .team .container .row .item .social a i, body .services .container .row .advanced .item, body .services .container .row .advanced .item:hover .description a, #comp_form .container .row .call-back input, #comp_form .container .row .call-back textarea, #phone_form .container .row .call-back input, #phone_form .container .row .call-back textarea, #nout_form .container .row .call-back input, #nout_form .container .row .call-back textarea, #plan_form .container .row .call-back input, #plan_form .container .row .call-back textarea, #comp_form .container .row .call-back button, #phone_form .container .row .call-back button, #nout_form .container .row .call-back button, #plan_form .container .row .call-back button {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; }
@@ -56,7 +56,7 @@ body .slider {
             font-size: 40px; } }
       body .slider .container .row .description {
         font-size: 20px; }
-      body .slider .container .row .buttons button {
+      body .slider .container .row .buttons a {
         border: none;
         background: transparent;
         color: #ffffff;
@@ -67,19 +67,19 @@ body .slider {
         font-size: 14px;
         margin-right: 20px;
         margin-bottom: 20px; }
-        body .slider .container .row .buttons button:nth-child(1) {
+        body .slider .container .row .buttons a:nth-child(1) {
           background: #ffffff;
           color: #f69323; }
-          body .slider .container .row .buttons button:nth-child(1):hover {
+          body .slider .container .row .buttons a:nth-child(1):hover {
             background: #f69323;
             color: #ffffff;
             -webkit-transform: scale(1.1);
                 -ms-transform: scale(1.1);
                     transform: scale(1.1); }
-        body .slider .container .row .buttons button:last-child {
+        body .slider .container .row .buttons a:last-child {
           background: #f69323;
           color: #ffffff; }
-          body .slider .container .row .buttons button:last-child:hover {
+          body .slider .container .row .buttons a:last-child:hover {
             background: #ffffff;
             color: #f69323;
             -webkit-transform: scale(1.1);
@@ -747,7 +747,7 @@ body .services .container .row .advanced {
   padding: 70px 0; }
   #comp_form .container .row ul, #phone_form .container .row ul, #nout_form .container .row ul, #plan_form .container .row ul {
     list-style-type: disc;
-    margin: 0 20px; }
+    padding: 0 20px; }
   #comp_form .container .row .call-back, #phone_form .container .row .call-back, #nout_form .container .row .call-back, #plan_form .container .row .call-back {
     display: -webkit-box;
     display: -webkit-flex;

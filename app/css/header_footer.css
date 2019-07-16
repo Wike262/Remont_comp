@@ -9,7 +9,7 @@ ul {
   margin: 0;
   padding: 0; }
 
-.transition, body header .head_top .order_call button, body header .container-fluid:nth-child(2) .container .head_lower .header_navigation ul li, body header .container-fluid:nth-child(2) .container .head_lower .social ul li a i, body footer .footer_top .service_title .social ul li a, body footer .footer_top .service_info .description .phone_email .phone a, body footer .footer_top .service_info .description .phone_email .email a, body footer .footer_top .service_serv .description ul li a:hover, body footer .footer_lower .row .footer_navigation nav ul li a {
+.transition, body header .head_top .order_call a, body header .container-fluid:nth-child(2) .container .head_lower .header_navigation ul li, body header .container-fluid:nth-child(2) .container .head_lower .social ul li a i, body footer .footer_top .service_title .social ul li a, body footer .footer_top .service_info .description .phone_email .phone a, body footer .footer_top .service_info .description .phone_email .email a, body footer .footer_top .service_serv .description ul li a:hover, body footer .footer_lower .row .footer_navigation nav ul li a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; }
@@ -93,6 +93,9 @@ body {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
+    body header .head_top .logotype p {
+      font-weight: bold;
+      margin-left: 30px; }
     body header .head_top .order_call {
       display: -webkit-box;
       display: -webkit-flex;
@@ -109,15 +112,18 @@ body {
           -webkit-justify-content: center;
               -ms-flex-pack: center;
                   justify-content: center; } }
-      body header .head_top .order_call button {
+      body header .head_top .order_call a {
         background: transparent;
         text-transform: uppercase;
         font-weight: bold;
         color: #f69323;
         border: 2px solid #f69323;
         padding: 10px 20px;
-        cursor: pointer; }
-        body header .head_top .order_call button:hover {
+        cursor: pointer;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content; }
+        body header .head_top .order_call a:hover {
           -webkit-transform: scale(1.1);
               -ms-transform: scale(1.1);
                   transform: scale(1.1);
